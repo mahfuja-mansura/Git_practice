@@ -7,10 +7,7 @@ public class Iteration
         {
             arr[i] = i + (i+1);
         }
-
-        for(int i = 0; i < arr.length; i++)
-        {
-           System.out.print(arr[i] + " ");
-        }
+        Required_methods rm = new Required_methods();
+        rm.print_arr_int(arr, "hor");
     }
 }
