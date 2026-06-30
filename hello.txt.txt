@@ -1,1 +1,2 @@
 This is my first git project
+Git is awesome! 
