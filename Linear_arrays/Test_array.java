@@ -14,5 +14,6 @@ public class Test_array
         rm.reverse_op(arr);
         rm.reverse_ip(arr);
         rm.insert(arr, 3, 100);
+        rm.remove(arr, 3);
     }    
 }

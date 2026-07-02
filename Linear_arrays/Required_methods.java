@@ -167,4 +167,23 @@ public class Required_methods
         }
         print_arr_int(new_arr, "hor");
     }
+
+
+
+    //Method 9
+    public void remove(int[]arr, int indx)
+    {
+        int[]new_arr = new int [arr.length-1];
+        
+        for(int i = 0; i < indx; i++)
+        {
+            new_arr[i] = arr[i];
+        }
+
+        for(int i = new_arr.length-1; i>=indx; i--)
+        {
+            new_arr[i] = arr[i+1];
+        }
+        print_arr_int(new_arr, "hor");
+    }
 }
