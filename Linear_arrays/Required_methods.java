@@ -186,4 +186,51 @@ public class Required_methods
         }
         print_arr_int(new_arr, "hor");
     }
+
+
+
+    //Method 10
+    public String palindrome(int[]arr, int size)
+    {
+        boolean pal = true;
+        for(int i = 0; i < size/2; i++)
+        {
+            if(arr[i]==arr[size-1-i])
+            {
+                pal = true;
+            }
+            else
+            {
+                pal = false;
+                break;
+            }
+        }
+        if(pal==true)
+        {
+            return "Pass";
+        }
+        else
+        {
+            return "Fail";
+        }
+    }
+
+
+
+    //Method 11
+    public void Merge_Arrays(int[]arr1, int size1, int[]arr2, int size2)
+    {
+        int[]new_arr = new int [size1 + size2];
+        for(int i = 0; i < size1; i++)
+        {
+            new_arr[i] = arr1[i];
+        }
+        
+        for(int i = 0; i < size2; i++)
+        {
+            new_arr[size1+i] = arr2[i];
+        }
+
+        print_arr_int(new_arr, "hor");
+    }
 }
